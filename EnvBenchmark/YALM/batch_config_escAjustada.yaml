@@ -1,0 +1,190 @@
+milvushnsw:
+  - uri: "http://localhost:19530"
+    m: 16
+    ef_construction: 128
+    ef_search: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_823"
+    custom_dataset_name: "qu_823"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/823_dataset"
+    custom_dataset_size: 823
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
+
+  - uri: "http://localhost:19530"
+    m: 16
+    ef_construction: 128
+    ef_search: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_1k"
+    custom_dataset_name: "qu_1k"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/cv_dataset_2"
+    custom_dataset_size: 1245
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
+
+  - uri: "http://localhost:19530"
+    m: 16
+    ef_construction: 128
+    ef_search: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_10k"
+    custom_dataset_name: "qu_10k"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/quSER_dataset_2"
+    custom_dataset_size: 13941
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
+
+  - uri: "http://localhost:19530"
+    m: 16
+    ef_construction: 128
+    ef_search: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_30k"
+    custom_dataset_name: "qu_30k"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/30k_dataset"
+    custom_dataset_size: 35085 
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
+
+chroma:
+  - host: "localhost"
+    port: 8000
+    m: 16
+    ef_construct: 128
+    ef_search: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_823"
+    custom_dataset_name: "qu_823"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/823_dataset"
+    custom_dataset_size: 823
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
+
+  - host: "localhost"
+    port: 8000
+    m: 16
+    ef_construct: 128
+    ef_search: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_1k"
+    custom_dataset_name: "qu_1k"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/cv_dataset_2"
+    custom_dataset_size: 1245
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
+
+  - host: "localhost"
+    port: 8000
+    m: 16
+    ef_construct: 128
+    ef_search: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_10k"
+    custom_dataset_name: "qu_10k"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/quSER_dataset_2"
+    custom_dataset_size: 13941
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
+    
+  - host: "localhost"
+    port: 8000
+    m: 16
+    ef_construct: 128
+    ef_search: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_30k"
+    custom_dataset_name: "qu_30k"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/30k_dataset"
+    custom_dataset_size: 35085 
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
+
+weaviate:
+  - api_key: "cXh3TFBTK053QjRoc3VuWl9sRDJwZUVYMTJEd0JQWlJtMFVCSXF5bjlMdEd2UFMxTTZ1RFJScWVORWFrPV92MjAw"
+    url: "https://kekszgwlqtumdqgkxtdnha.c0.us-west3.gcp.weaviate.cloud"
+    m: 16
+    ef_construction: 128
+    ef: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_823"
+    custom_dataset_name: "qu_823"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/823_dataset"
+    custom_dataset_size: 823
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
+
+  - api_key: "cXh3TFBTK053QjRoc3VuWl9sRDJwZUVYMTJEd0JQWlJtMFVCSXF5bjlMdEd2UFMxTTZ1RFJScWVORWFrPV92MjAw"
+    url: "https://kekszgwlqtumdqgkxtdnha.c0.us-west3.gcp.weaviate.cloud"
+    m: 16
+    ef_construction: 128
+    ef: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_1k"
+    custom_dataset_name: "qu_1k"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/cv_dataset_2"
+    custom_dataset_size: 1245
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
+    
+  - api_key: "cXh3TFBTK053QjRoc3VuWl9sRDJwZUVYMTJEd0JQWlJtMFVCSXF5bjlMdEd2UFMxTTZ1RFJScWVORWFrPV92MjAw"
+    url: "https://kekszgwlqtumdqgkxtdnha.c0.us-west3.gcp.weaviate.cloud"
+    m: 16
+    ef_construction: 128
+    ef: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_10k"
+    custom_dataset_name: "qu_10k"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/quSER_dataset_2"
+    custom_dataset_size: 13941
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
+
+  - api_key: "cXh3TFBTK053QjRoc3VuWl9sRDJwZUVYMTJEd0JQWlJtMFVCSXF5bjlMdEd2UFMxTTZ1RFJScWVORWFrPV92MjAw"
+    url: "https://kekszgwlqtumdqgkxtdnha.c0.us-west3.gcp.weaviate.cloud"
+    m: 16
+    ef_construction: 128
+    ef: 100
+    case_type: "PerformanceCustomDataset"
+    k: 10
+    custom_case_name: "qu_30k"
+    custom_dataset_name: "qu_30k"
+    custom_dataset_dir: "/home/laad/Documentos/experimentos carmen/bench_enviroment/30k_dataset"
+    custom_dataset_size: 35085 
+    custom_dataset_dim: 1024
+    custom_dataset_file_count: 1
+    custom_dataset_metric_type: "L2"
+    num_concurrency: "1,5,10,20,30,40,60"
